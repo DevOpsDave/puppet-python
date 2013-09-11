@@ -1,4 +1,5 @@
 
+
 Puppet::Type.type(:virtualenv).provide(:ruby) do
 
   commands :virtenvbin => "virtualenv",
@@ -20,6 +21,8 @@ Puppet::Type.type(:virtualenv).provide(:ruby) do
     parameters.push("-p #{resource[:version]}")
     parameters.push("--system-site-packages") unless resource[:systempkgs] == false
     parameters.push("--distribute") unless resource[:distribute] == false
+    puts "Create!"
+    binding.pry
 
     virtenvbin(parameters.join(' '), resource[:name])
 

@@ -1,6 +1,7 @@
+require 'pry'
 Puppet::Type.newtype(:virtualenv) do
 
-  @doc = "Manages python virtual environments."
+  @doc = "Creates, updates and deletes python virtualenvs."
 =begin
 
   $ensure       = present,
@@ -52,15 +53,16 @@ Puppet::Type.newtype(:virtualenv) do
     munge do |value|
       interpreter = ''
       case (value)
-        when 'system'
-          interpreter = %x(which python)
+        when :system
+          interpreter = %x(which python).chomp
         when /^(\d+)$/
-          interpreter = %x(which python#{value})
+          interpreter = %x(which python#{value}).chomp
         when /^python\d+$/
-          interpreter = %x(which #{value})
+          interpreter = %x(which #{value}).chomp
         else
-          fail Puppet::Error, "Problem! Can not catch value #{value}"
+          fail Puppet::Error, "Version attribute can not be #{value}."
       end
+      binding.pry
       interpreter
     end
 
@@ -69,7 +71,7 @@ Puppet::Type.newtype(:virtualenv) do
   newparam(:requirements) do
     defaultto :false
     validate do |value|
-      unless value == 'false' or Puppet::Util.absolute_path?(value)
+      unless value == :false or Puppet::Util.absolute_path?(value)
         fail Puppet::Error, "requirements can only be false or an absolute path.  Not #{value}."
       end
     end
@@ -100,9 +102,13 @@ Puppet::Type.newtype(:virtualenv) do
     defaultto :root
   end
 
-  neparam(:index) do
+  newparam(:index) do
     defaultto :false
     newvalues(/http?:\/\//, /https?:\/\//, /^false$/)
+  end
+
+  newproperty(:debug) do
+
   end
 
   # Autorequire the file resource if it's being managed

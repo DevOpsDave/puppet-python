@@ -13,9 +13,30 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="RVM: ruby-1.9.3-p429 [global]" jdkType="RUBY_SDK" />
+    <orderEntry type="jdk" jdkName="RVM: ruby-1.9.3-p429 [puppet-python]" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Python 2.7.1 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python) interpreter library" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.0.9, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.4, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="metaclass (v0.0.1, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mocha (v0.14.0, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.1.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.6.8, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.10, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.12.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puppet-lint (v0.3.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puppetlabs_spec_helper (v0.4.1, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.1.0, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v2.14.1, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.14.5, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.14.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.14.3, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-puppet (v0.1.6, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-system (v2.2.0, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-system-puppet (v2.2.0, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slop (v3.4.6, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="systemu (v2.5.2, RVM: ruby-1.9.3-p429 [puppet-python]) [gem]" level="application" />
   </component>
 </module>
 
